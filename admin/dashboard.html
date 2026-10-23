@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard | Newaz Portfolio</title><link rel="stylesheet" href="../css/style.css">
+<style>
+.admin-layout{max-width:1000px;margin:35px auto;padding:0 20px}.panel{background:#111218;border:1px solid #292a32;border-radius:12px;padding:22px;margin:18px 0}
+label{display:block;margin:12px 0 6px;color:#c7c8ce;font-size:.9rem}input,textarea{width:100%;padding:11px;border-radius:7px;border:1px solid #393a44;background:#0b0c10;color:#fff;font:inherit}textarea{min-height:90px;resize:vertical}
+button{cursor:pointer;font:inherit;border:0}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.status{color:#ff9aa7;min-height:24px}.project-row{display:flex;gap:12px;align-items:center;border-top:1px solid #292a32;padding:14px 0}.project-row img{width:72px;height:55px;object-fit:cover;border-radius:6px}.delete{background:#35131a;color:#ff9aa7;padding:8px 12px;border-radius:6px;margin-left:auto}@media(max-width:650px){.row{grid-template-columns:1fr}.project-row{align-items:flex-start}.project-row img{width:55px}}
+</style>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="../index.html">NEWAZ<span>.</span></a><div><a href="../index.html">View site</a>　<button id="logout" class="button secondary">Sign out</button></div></header>
+<main class="admin-layout">
+<p class="eyebrow">CONTENT MANAGEMENT</p><h1>Portfolio Dashboard</h1><p class="muted">Edit the website profile and manage portfolio projects here.</p>
+<section class="panel"><h2>Profile & Contact</h2>
+<form id="profile-form">
+<label>Name</label><input id="name" value="Newaz Mursalin" required>
+<label>Hero introduction</label><textarea id="bio">I create thoughtful, memorable visuals for brands, businesses and creators.</textarea>
+<label>About text</label><textarea id="about">I'm Newaz Mursalin, a graphic designer focused on creating clean, impactful visual communication for brands and digital platforms.</textarea>
+<label>Contact email</label><input id="contactEmail" type="email" placeholder="you@example.com">
+<button class="button primary" type="submit">Save profile</button><p id="profile-status" class="status"></p>
+</form></section>
+<section class="panel"><h2>Add Portfolio Project</h2>
+<form id="project-form">
+<div class="row"><div><label>Project title</label><input id="title" required></div><div><label>Category</label><input id="category" placeholder="Social Media Design"></div></div>
+<label>Image URL</label><input id="imageUrl" type="url" placeholder="https://example.com/design.jpg" required>
+<label>Description</label><textarea id="description"></textarea>
+<button class="button primary" type="submit">Publish project</button><p id="project-status" class="status"></p>
+</form></section>
+<section class="panel"><h2>Published projects</h2><div id="projects-list">Loading…</div></section>
+<section class="panel"><h2>Social links</h2><p class="muted">Enter full https:// URLs. Leave a field empty to hide that link.</p>
+<form id="social-form">
+<div class="row"><div><label>Facebook URL</label><input id="facebook" type="url"></div><div><label>Instagram URL</label><input id="instagram" type="url"></div><div><label>LinkedIn URL</label><input id="linkedin" type="url"></div><div><label>YouTube URL</label><input id="youtube" type="url"></div></div>
+<button class="button primary" type="submit">Save social links</button><p id="social-status" class="status"></p>
+</form></section>
+</main>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script><script src="../js/firebase-config.js"></script><script src="dashboard.js"></script>
+</body></html>
