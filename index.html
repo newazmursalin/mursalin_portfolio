@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Newaz Mursalin — Graphic Designer & Creative Visual Artist">
+  <title>Newaz Mursalin | Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">NEWAZ MURSALIN<span>.</span></a>
+    <nav><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="#contact">Let's Talk</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">GRAPHIC DESIGNER & CREATIVE VISUAL ARTIST</p>
+        <h1>Design that makes<br><span>your brand stand out.</span></h1>
+        <p class="hero-text" id="hero-bio">I create thoughtful, memorable visuals for brands, businesses and creators.</p>
+        <div class="hero-actions"><a class="button primary" href="#portfolio">Explore My Work</a><a class="button secondary" href="#contact">Contact Me</a></div>
+      </div>
+      <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-card"><span>NM</span><small>CREATIVE STUDIO</small><b>IDEAS → VISUALS</b></div><div class="spark">✳</div></div>
+    </section>
+    <section class="section about" id="about">
+      <p class="eyebrow">A LITTLE ABOUT ME</p><h2>Creative thinking.<br><span>Purposeful design.</span></h2>
+      <p id="about-text">I'm Newaz Mursalin, a graphic designer focused on creating clean, impactful visual communication for brands and digital platforms.</p>
+    </section>
+    <section class="section" id="services">
+      <p class="eyebrow">WHAT I DO</p><h2>Services</h2>
+      <div class="service-grid" id="services-grid">
+        <article class="service-card"><span>01</span><h3>Social Media Design</h3><p>Engaging creatives for social platforms and campaigns.</p></article>
+        <article class="service-card"><span>02</span><h3>Brand Identity</h3><p>Visual identities that help businesses look consistent.</p></article>
+        <article class="service-card"><span>03</span><h3>Posters & Banners</h3><p>Promotional designs built to communicate clearly.</p></article>
+      </div>
+    </section>
+    <section class="section" id="portfolio">
+      <p class="eyebrow">SELECTED PROJECTS</p><h2>My Portfolio</h2>
+      <p class="muted">Projects published through the admin panel will appear here.</p>
+      <div class="portfolio-grid" id="portfolio-grid"><p class="muted">Loading projects…</p></div>
+    </section>
+    <section class="section contact" id="contact">
+      <p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's create something<br><span>great together.</span></h2>
+      <p id="contact-email">Update your email from the admin panel.</p>
+      <a class="button primary" id="email-button" href="mailto:">Get in touch</a>
+      <div class="socials" id="social-links"></div>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> Newaz Mursalin</span><a href="admin/index.html">Admin login</a></footer>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
